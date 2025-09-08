@@ -25,7 +25,6 @@ o	Windows: Tìm Android Studio trong menu Start và nhấp mở.
 o	macOS: Vào Finder, tìm Android Studio và nhấn mở.
 2.	Khi Android Studio mở lên, chọn “Open” hoặc “Open an existing project”.
 3.	Trong hộp thoại hiện ra, điều hướng đến thư mục chứa dự án của bạn.
-o	Ví dụ: Nếu dự án của bạn nằm ở C:\Users\Hue baby\Documents\Zalo Received Files\CinemaKotlin, hãy chọn thư mục này.
 4.	Nhấn OK để mở dự án.
 Cách 2: Mở từ thư mục dự án
 1.	Mở File Explorer (Windows) hoặc Finder (macOS).
