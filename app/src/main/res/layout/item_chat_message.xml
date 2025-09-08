@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="chatMessage"
+            type="com.example.cinema.model.ChatMessage" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/layoutChatMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewMessageOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_bg_text_other"
+            android:padding="15dp"
+            android:text="@{chatMessage.text}"
+            android:visibility="@{chatMessage.isMine ? View.GONE : View.VISIBLE}" />
+
+        <TextView
+            android:id="@+id/textViewMessageMine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_bg_text_mine"
+            android:padding="15dp"
+            android:text="@{chatMessage.text}"
+            android:visibility="@{chatMessage.isMine ? View.VISIBLE : View.GONE}" />
+    </LinearLayout>
+</layout>
